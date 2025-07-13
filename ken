@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>STEPBACK – Basketball Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">STEPBACK</a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+      <span class="cart-icon" onclick="showCart()" style="cursor:pointer;">
+        🛒 <span id="cart-count" class="cart-count">0</span>
+      </span>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Dein Basketball-Store</h1>
+      <p>Entdecke die neuesten Sneaker, Apparel und Equipment für Basketballer!</p>
+      <a href="shop.html" class="cta-btn">Jetzt shoppen</a>
+    </section>
+    <section class="highlights">
+      <h2>Shop Highlights</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="images/jordan1.jpg" alt="Jordan 1 Sneaker">
+          <h3>Air Jordan 1</h3>
+          <p>Legendärer Sneaker für dein Game!</p>
+          <div class="product-price">149,99 €</div>
+        </div>
+        <div class="product-card">
+          <img src="images/ball.jpg" alt="Basketball">
+          <h3>Wilson Evolution</h3>
+          <p>Der perfekte Basketball für Indoor-Spiele.</p>
+          <div class="product-price">39,99 €</div>
+        </div>
+        <div class="product-card">
+          <img src="images/shirt.jpg" alt="T-Shirt">
+          <h3>Stepback Shirt</h3>
+          <p>Stylisches Shirt für echte Baller.</p>
+          <div class="product-price">29,99 €</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a> | 
+      <a href="contact.html">Kontakt</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+    </div>
+    <p>© 2025 STEPBACK</p>
+  </footer>
+  <script src="shop.js"></script>
+</body>
+</html>
