@@ -1,0 +1,13 @@
+h1, h2, h3 {
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-weight: 800;
+}
+p, a, li, button, input, textarea {
+  font-family: 'Inter', Arial, sans-serif;
+}
+.cta-btn {
+  background: #ef233c; /* Beispiel für kontrastierenden Button */
+  color: #fff;
+  box-shadow: 0 2px 16px rgba(239,35,60,0.12);
+}
+.cta-btn:hover { background: #d90429; }
