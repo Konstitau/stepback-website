@@ -4,24 +4,30 @@
   <meta charset="UTF-8">
   <title>Shop – STEPBACK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar sticky-navbar">
       <div class="logo-area">
-        <img src="Stepback.png"alt="Logo" class="logo-img" />
-        <a href="index.html" class="logo-text">STEPBACK</a>
+        <img src="../images/mein-logo.svg" alt="STEPBACK Logo" class="logo-img" />
+        <span class="logo-text">STEPBACK</span>
       </div>
       <ul class="nav-links">
-        <li><a href="shop.html" class="active">Shop</a></li>
-        <li><a href="about.html">Über uns</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
+        <li class="dropdown">
+          <a href="shop.html">Shop ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="shop.html?cat=sneaker">Sneaker</a></li>
+            <li><a href="shop.html?cat=apparel">Apparel</a></li>
+            <li><a href="shop.html?cat=equipment">Equipment</a></li>
+          </ul>
+        </li>
+        <li><a href="../about/about.html">Über uns</a></li>
+        <li><a href="../contact/contact.html">Kontakt</a></li>
+        <li><a href="../impressum/impressum.html">Impressum</a></li>
       </ul>
-      <span class="cart-icon" onclick="showCart()" style="cursor:pointer;">
+      <span class="cart-icon" onclick="showCart()">
         🛒 <span id="cart-count" class="cart-count">0</span>
       </span>
     </nav>
@@ -37,19 +43,39 @@
         <option value="Apparel">Apparel</option>
       </select>
     </div>
-    <div class="products" id="shop-products"></div>
+    <div class="products" id="shop-products">
+      <!-- Produktkarten wie in index.html, Bilder-Pfad mit ../images/ -->
+      <div class="product-card">
+        <img src="../images/jordan1.webp" alt="Jordan 1 Sneaker" loading="lazy">
+        <h3>Air Jordan 1</h3>
+        <p>Legendärer Sneaker – für Sieger gemacht!</p>
+        <div class="product-price">149,99 €</div>
+      </div>
+      <div class="product-card">
+        <img src="../images/ball.webp" alt="Wilson Evolution Basketball" loading="lazy">
+        <h3>Wilson Evolution</h3>
+        <p>Das Top-Basketball für Profis & Streetballer</p>
+        <div class="product-price">39,99 €</div>
+      </div>
+      <div class="product-card">
+        <img src="../images/shirt.webp" alt="Stepback Shirt" loading="lazy">
+        <h3>Stepback Shirt</h3>
+        <p>Dein Look – auf und neben dem Platz.</p>
+        <div class="product-price">29,99 €</div>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="footer-links">
-      <a href="impressum.html">Impressum</a> | 
-      <a href="contact.html">Kontakt</a>
+      <a href="../impressum/impressum.html">Impressum</a> |
+      <a href="../contact/contact.html">Kontakt</a>
     </div>
     <div class="social-icons">
-      <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
-      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="../images/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="../images/facebook.svg" alt="Facebook"></a>
     </div>
     <p>© 2025 STEPBACK</p>
   </footer>
-  <script src="shop.js"></script>
+  <script src="../js/shop.js"></script>
 </body>
 </html>
