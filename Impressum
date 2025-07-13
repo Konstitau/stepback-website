@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Impressum – Stepback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Impressum</h1>
+  <p>
+    Angaben gemäß § 5 TMG<br>
+    Max Mustermann<br>
+    Musterstraße 12<br>
+    12345 Musterstadt<br>
+    <br>
+    Kontakt:<br>
+    Telefon: 01234/56789<br>
+    E-Mail: info@stepback.de<br>
+  </p>
+  <a href="index.html">Zurück zur Startseite</a>
+</body>
+</html>
