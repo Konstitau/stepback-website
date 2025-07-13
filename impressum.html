@@ -2,56 +2,51 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Impressum – Stepback</title>
+  <title>Impressum – STEPBACK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .container {
-      max-width: 600px;
-      margin: 80px auto;
-      background: rgba(30,30,30,0.8);
-      border-radius: 16px;
-      padding: 32px;
-      color: #fff;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 24px;
-      letter-spacing: 2px;
-    }
-    p {
-      font-size: 1.1em;
-      color: #ddd;
-      line-height: 1.7;
-    }
-    .back-link {
-      display: block;
-      margin-top: 32px;
-      text-align: center;
-      color: #ffcc00;
-      text-decoration: none;
-      font-size: 1.1em;
-      font-weight: bold;
-    }
-    .back-link:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Impressum</h1>
-    <p>
-      Angaben gemäß § 5 TMG<br>
-      Max Mustermann<br>
-      Musterstraße 12<br>
-      12345 Musterstadt<br>
-      <br>
-      Kontakt:<br>
-      Telefon: 01234/56789<br>
-      E-Mail: info@stepback.de<br>
-    </p>
-    <a href="index.html" class="back-link">Zurück zur Startseite</a>
-  </div>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">STEPBACK</a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="impressum.html" class="active">Impressum</a></li>
+      </ul>
+      <span class="cart-icon" onclick="showCart()" style="cursor:pointer;">
+        🛒 <span id="cart-count" class="cart-count">0</span>
+      </span>
+    </nav>
+  </header>
+  <main>
+    <section class="impressum">
+      <h1>Impressum</h1>
+      <p>
+        Angaben gemäß § 5 TMG<br>
+        Max Mustermann<br>
+        Musterstraße 12<br>
+        12345 Musterstadt<br>
+        <br>
+        Kontakt:<br>
+        Telefon: 01234/56789<br>
+        E-Mail: info@stepback.de<br>
+      </p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a> | 
+      <a href="contact.html">Kontakt</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+    </div>
+    <p>© 2025 STEPBACK</p>
+  </footer>
+  <script src="shop.js"></script>
 </body>
 </html>
