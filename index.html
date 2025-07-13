@@ -2,27 +2,32 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Stepback – Basketball Shop</title>
+  <title>STEPBACK – Basketball Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Fonts: Inter und Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar sticky-navbar">
       <div class="logo-area">
-        <!-- Dein Logo hier -->
-        <img src="images/mein-logo.svg" alt="Stepback Logo" class="logo-img" />
+        <img src="images/mein-logo.svg" alt="STEPBACK Logo" class="logo-img" />
         <span class="logo-text">STEPBACK</span>
       </div>
       <ul class="nav-links">
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">Über uns</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
+        <li class="dropdown">
+          <a href="shop/shop.html">Shop ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="shop/shop.html?cat=sneaker">Sneaker</a></li>
+            <li><a href="shop/shop.html?cat=apparel">Apparel</a></li>
+            <li><a href="shop/shop.html?cat=equipment">Equipment</a></li>
+          </ul>
+        </li>
+        <li><a href="about/about.html">Über uns</a></li>
+        <li><a href="contact/contact.html">Kontakt</a></li>
+        <li><a href="impressum/impressum.html">Impressum</a></li>
       </ul>
-      <span class="cart-icon" onclick="showCart()" style="cursor:pointer;">
+      <span class="cart-icon" onclick="showCart()">
         🛒 <span id="cart-count" class="cart-count">0</span>
       </span>
     </nav>
@@ -30,30 +35,30 @@
   <main>
     <section class="hero">
       <div class="hero-logo-space">
-        <img src="images/mein-logo.svg" alt="Stepback Logo" style="width:70px;height:70px;object-fit:contain;" />
+        <img src="images/mein-logo.svg" alt="STEPBACK Logo" style="width:70px;height:70px;object-fit:contain;" />
       </div>
       <h1>Next Level Basketball Shopping</h1>
-      <p>Die modernsten Sneaker, Apparel und Equipment – direkt für deinen Court-Lifestyle.  
-      <br><span style="color:#5e60ce;font-weight:700;">Deine Karriere verdient den besten Shop!</span></p>
-      <a href="shop.html" class="cta-btn">Shop starten</a>
+      <p>Die modernsten Sneaker, Apparel und Equipment – direkt für deinen Court-Lifestyle.<br>
+      <span style="color:#5e60ce;font-weight:700;">Deine Karriere verdient den besten Shop!</span></p>
+      <a href="shop/shop.html" class="cta-btn">Shop starten</a>
     </section>
     <section class="highlights">
       <h2>Unsere Highlights</h2>
       <div class="products">
         <div class="product-card">
-          <img src="images/jordan1.jpg" alt="Jordan 1">
+          <img src="images/jordan1.webp" alt="Jordan 1" loading="lazy">
           <h3>Air Jordan 1</h3>
           <p>Legendärer Sneaker – für Sieger gemacht!</p>
           <div class="product-price">149,99 €</div>
         </div>
         <div class="product-card">
-          <img src="images/ball.jpg" alt="Wilson Evolution">
+          <img src="images/ball.webp" alt="Wilson Evolution" loading="lazy">
           <h3>Wilson Evolution</h3>
           <p>Das Top-Basketball für Profis & Streetballer</p>
           <div class="product-price">39,99 €</div>
         </div>
         <div class="product-card">
-          <img src="images/shirt.jpg" alt="Stepback Shirt">
+          <img src="images/shirt.webp" alt="Stepback Shirt" loading="lazy">
           <h3>Stepback Shirt</h3>
           <p>Dein Look – auf und neben dem Platz.</p>
           <div class="product-price">29,99 €</div>
@@ -63,8 +68,8 @@
   </main>
   <footer>
     <div class="footer-links">
-      <a href="impressum.html">Impressum</a> | 
-      <a href="contact.html">Kontakt</a>
+      <a href="impressum/impressum.html">Impressum</a> |
+      <a href="contact/contact.html">Kontakt</a>
     </div>
     <div class="social-icons">
       <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
@@ -72,6 +77,6 @@
     </div>
     <p>© 2025 STEPBACK</p>
   </footer>
-  <script src="shop.js"></script>
+  <script src="js/shop.js"></script>
 </body>
 </html>
