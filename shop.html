@@ -5,11 +5,16 @@
   <title>Shop – STEPBACK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">STEPBACK</a>
+      <div class="logo-area">
+        <img src="images/dein-logo.svg" alt="Logo" class="logo-img" />
+        <a href="index.html" class="logo-text">STEPBACK</a>
+      </div>
       <ul class="nav-links">
         <li><a href="shop.html" class="active">Shop</a></li>
         <li><a href="about.html">Über uns</a></li>
@@ -22,7 +27,7 @@
     </nav>
   </header>
   <main>
-    <h1 style="text-align:center;color:#ffcc00;margin-top:2em;">Shop</h1>
+    <h1 style="text-align:center;color:var(--accent);margin-top:2em;">Shop</h1>
     <div class="filter-search">
       <input type="text" id="search-input" placeholder="Suche Produkte..." oninput="applyFilter()">
       <select id="category-select" onchange="applyFilter()">
