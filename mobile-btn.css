@@ -1,0 +1,16 @@
+.cta-btn, .add-cart-btn, .contact-form button {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.2em;
+  border-radius: 32px;
+  padding: 1em 2em;
+  margin: 0.5em 0;
+}
+@media (max-width: 600px) {
+  .cta-btn, .add-cart-btn, .contact-form button {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 1.1em 0;
+    margin: 0.7em 0;
+  }
+}
