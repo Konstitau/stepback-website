@@ -5,11 +5,17 @@
   <title>STEPBACK – Basketball Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">STEPBACK</a>
+      <div class="logo-area">
+        <!-- Hier dein eigenes Logo einfügen -->
+        <img src="images/dein-logo.svg" alt="Logo" class="logo-img" />
+        <a href="index.html" class="logo-text">STEPBACK</a>
+      </div>
       <ul class="nav-links">
         <li><a href="shop.html">Shop</a></li>
         <li><a href="about.html">Über uns</a></li>
@@ -23,12 +29,16 @@
   </header>
   <main>
     <section class="hero">
+      <div class="hero-logo-space">
+        <!-- Hier erscheint das Logo groß auf der Startseite -->
+        <img src="images/dein-logo.svg" alt="Logo" style="width:60px;height:60px;object-fit:contain;" />
+      </div>
       <h1>Dein Basketball-Store</h1>
       <p>Entdecke die neuesten Sneaker, Apparel und Equipment für Basketballer!</p>
       <a href="shop.html" class="cta-btn">Jetzt shoppen</a>
     </section>
     <section class="highlights">
-      <h2>Shop Highlights</h2>
+      <h2 style="color:var(--accent);text-align:center;">Shop Highlights</h2>
       <div class="products">
         <div class="product-card">
           <img src="images/jordan1.jpg" alt="Jordan 1 Sneaker">
