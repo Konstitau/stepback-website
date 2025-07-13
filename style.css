@@ -269,3 +269,43 @@ footer {
   .hero h1 { font-size: 2em; }
   .hero p { font-size: 1.1em; }
 }
+/* ...DEIN CSS wie gepostet oben... */
+
+/* Dropdown-Menü */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  background: var(--bg-card);
+  box-shadow: 0 2px 14px rgba(94,96,206,0.10);
+  border-radius: var(--radius);
+  min-width: 140px;
+  z-index: 100;
+  flex-direction: column;
+  padding: 0.7em 0;
+}
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: flex;
+}
+.dropdown-menu li {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu a {
+  padding: 10px 20px;
+  display: block;
+  color: var(--text-main);
+  background: transparent;
+  border-radius: 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+.dropdown-menu a:hover {
+  background: var(--accent);
+  color: var(--accent-light);
+}
